@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link href="Registrationform2_fcc.css" rel="stylesheet"/>
+</head>
+
+<body>
+    <h1 id="title">Goodluck Coaching Center Registration Form</h1>
+    <p id="description">Kindly fill out the registration form</p>
+
+    <form id="survey-form" action="">
+
+        <fieldset>
+            <label for="name" id="name-label">Enter your first name: 
+                <input id="name" name="first_name" type="text" placeholder="e.g. Henry" required/>
+            </label>
+            
+            <label for="last-name">Enter your last name: 
+                <input id="last-name" name="last_name" type="text" required/>
+            </label>
+
+            <label for="email" id="email-label">Enter your email address: 
+                <input id="email" name="email_address" type="email" placeholder="abcdxyz@abcd.com" required/>
+            </label>
+
+            <label for="new-password">Create a new password: 
+                <input id="new-password" name="new_password" type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required/>
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Select your educational qualifications (can select multiple/required)</legend>
+
+            <label for="HSC">
+                <input id="HSC" name="HSC" class="inline" value="HSC" type="radio" required>
+                HSC: Higher Secondary Certificate
+            </label>
+
+            <label for="SSC">
+                <input id="SSC" name="SSC" class="inline" value="SSC" type="radio">
+                SSC: Secondary School Certificate
+            </label>
+
+            <label for="JSC">
+                <input id="JSC" name="JSC" class="inline" value="JSC" type="radio">
+                JSC: Juniour Secondary Certificate
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Choose your desired course (can select multiple/required)</legend>
+
+            <label for="Data-science">
+                <input id="Data-science" name="Data-science" class="inline" value="Data-science" type="checkbox">
+                Data-science
+            </label>
+
+            <label for="Machine-learning">
+                <input id="Machine-learning" name="Machine-learning" class="inline" value="Machine-learning" type="checkbox">
+                Machine-learning
+            </label>
+
+            <label for="Data-analytics">
+                <input id="Data-analytics" name="Data-analytics" class="inline" value="Data-analytics" type="checkbox">
+                Data-analytics
+            </label>  
+        </fieldset>
+
+        <fieldset>
+            <label for="profile-picture"> 
+                Upload a profile picture:
+                <input id="profile-picture" name="profile_picture" class="" type="file">
+            </label>
+
+            <label for="number" id="number-label">
+                Enter your birth year:
+                <input id="number" name="number" class="" type="number" min="1940" max="2050" placeholder="e.g. 2009">
+            </label>
+
+            <label for="referrer">
+                How did you hear about us?
+                <select name="referrer" id="dropdown">
+                    <option value="">(Select an option)</option>
+                    <option value="1">Social Media</option>
+                    <option value="2">YouTube</option>
+                    <option value="3">Other</option>
+                </select>
+            </label>
+
+            <label for="bio">
+                Leave your comments:
+                <textarea name="bio" id="bio" rows="3" cols="30" placeholder="e.g. The Data-science course can be improved..."></textarea> 
+            </label>
+        </fieldset>
+
+        <label for="terms-and-conditions">
+            <input id="terms-and-conditions" name="terms-and-conditions" class="inline" type="checkbox" required>
+            I agree to the <a href="">terms and conditions</a> of the Coaching center.
+        </label>
+
+        <input id="submit" type="submit" value="Submit" formaction="">
+
+    </form>
+</body>
+
+<footer>
+    <div class="footer"></div>
+</footer>
+
+<html>
