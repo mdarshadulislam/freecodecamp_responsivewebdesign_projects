@@ -1,1 +1,53 @@
+* {
+    box-sizing: border-box;
+    ;
+}
 
+body {
+    background-color: rgba(240, 240, 240);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2,
+h4,
+h3,
+.key-info {
+    text-align: center;
+}
+
+#img-div {
+    background-color: white;
+    padding: 10px 5px;
+    border-radius: 25px;
+}
+
+#image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+#tribute-info {
+    padding: 15px 15px;
+}
+
+#tribute-info li {
+    margin: 10px auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#tribute-link:active {
+    color: purple;
+}
+
+#tribute-link:visited {
+    color: blue;
+}
+
+#tribute-link:hover {
+    color: grey;
+}
