@@ -1,1 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Python Documentation</title>
+  <link rel="stylesheet" href="Technical_doc.css">
+</head>
+
+<body>
+  <nav id="navbar">
+    <header><b>Python Technical Documentation</b></header>
+    <img src="https://s3.dualstack.us-east-2.amazonaws.com/pythondotorg-assets/media/files/python-logo-only.svg" alt="pythonlogo">
+    <a href="#Introduction" class="nav-link">Introduction</a>
+    <a href="#Key_Features" class="nav-link">Key Features</a>
+    <a href="#Basic_Syntax" class="nav-link">Basic Syntax</a>
+    <a href="#Python_Functions" class="nav-link">Python Functions</a>
+    <a href="#Object_Oriented_Programming" class="nav-link">Object Oriented Programming</a>
+    <a href="#Common_Uses_and_Conclusion" class="nav-link">Common Uses and Conclusion</a>
+  </nav>
+
+  <main id="main-doc">
+    <!--Section1-->
+    <section id="Introduction" class="main-section">
+      <header>Introduction</header>
+      <p>Python is a high-level, interpreted programming language known for its simplicity and readability. It
+        supports multiple programming paradigms, including procedural, object-oriented, and functional
+        programming</p>
+      <ul>
+        <p><b>Overview of Python:</b></p>
+        <li><b>High-Level Language:</b> Python is designed to be easy to read and write.</li>
+        <li><b>Interpreted:</b> Python code is executed line by line, making debugging easier.</li>
+        <li><b>Multi-Paradigm:</b> Supports procedural, object-oriented, and functional programming.</li>
+      </ul>
+    </section>
+
+    <!--Section2-->
+    <section id="Key_Features" class="main-section">
+      <header>Key Features</header>
+      <p>Python's syntax is designed to be clean and straightforward, making it an ideal language for beginners
+        and professionals alike.</p>
+      <ul>
+        <p><b>Python's key features:</b></p>
+        <li>Simplicity and Readability</li>
+        <li>Dynamic Typing</li>
+        <li>Extensive Standard Library</li>
+      </ul>
+
+      <p><b>Variables and Data Types:</b></p>
+
+      <pre>
+            <code>
+            # Example
+            x = 10          # Integer
+            y = 3.14        # Float
+            name = "Python" # String  
+            </code>
+            </pre>
+
+    </section>
+
+    <!--Section3-->
+    <section id="Basic_Syntax" class="main-section">
+      <header>Basic Syntax</header>
+      <p><b>Control Structures:</b></p>
+      <ul>
+        <li><b>'if'</b> statements for conditional logic.</li>
+        <li><b>'for'</b> and <b>'while'</b> loops for iteration</li>
+      </ul>
+
+      <p><b>Example code:</b></p>
+
+      <pre>
+            <code>
+            # Example
+            if x > 5:
+                print("x is greater than 5")
+            else:<
+                print("x is 5 or less")
+            </code>
+            </pre>
+
+      <pre>
+            <code>
+            # If statement
+            number = 10
+            if number > 5:
+                print("Number is greater than 5")
+            else:
+                print("Number is 5 or less")
+                    
+            # For loop
+            for i in range(3):
+                print(i)        
+            </code>
+            </pre>
+
+    </section>
+
+    <!--Section4-->
+    <section id="Python_Functions" class="main-section">
+      <header>Python Functions</header>
+      <p>Functions in Python are defined using the <b>'def'</b> keyword. They help encapsulate code for reuse and
+        modularity.</p>
+
+      <p><b>Example code:</b></p>
+
+      <pre>
+            <code>
+            # Example
+            def greet(name):
+                return f"Hello, {name}!"
+    
+                print(greet("Alice"))
+            </code>
+            </pre>
+    </section>
+
+    <!--Section5-->
+    <section id="Object_Oriented_Programming" class="main-section">
+      <header>Object Oriented Programming</header>
+      <p>Python supports <b>OOP</b>, allowing the creation of classes and objects. It supports concepts like
+        inheritance, polymorphism, and encapsulation.</p>
+
+      <p><b>Example code:</b></p>
+
+      <pre class="centered-pre">
+            <code>
+            # Example
+            class Dog:
+                def __init__(self, name):
+                    self.name = name
+    
+                def bark(self):
+                    return "Woof!"
+    
+                my_dog = Dog("Buddy")
+                    Print(my_dog.bark())
+            </code>
+            </pre>
+
+    </section>
+
+    <!--Section6-->
+    <section id="Common_Uses_and_Conclusion" class="main-section">
+      <header>Common Uses and Conclusion</header>
+
+      <ul>
+        <li><b>Web Development:</b> Using frameworks like Django and Flask</li>
+        <li><b>Data Science and Analysis:</b> With libraries like NumPy, pandas, and Matplotlib</li>
+        <li><b>Machine Learning:</b> Utilizing libraries like TensorFlow and scikit-learn.</li>
+        <li><b>Automation and Scripting:</b> Writing scripts to automate repetitive tasks.</li>
+        <li><b>Game Development:</b> Using libraries like Pygame</li>
+      </ul>
+
+      <p><strong>Conclusion</strong></p>
+      <p>Python's ease of use, versatility, and strong community support make it a popular choice for developers
+        in various fields. Whether you're building a web application, analyzing data, or creating machine
+        learning models, Python provides the tools and libraries to help you succeed.</p>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer"></div>
+  </footer>
+</body>
