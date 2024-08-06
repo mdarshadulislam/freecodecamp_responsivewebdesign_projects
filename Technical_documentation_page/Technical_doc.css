@@ -1,1 +1,175 @@
+* {
+    box-sizing: border-box;
+}
 
+html {
+    scroll-behavior: smooth;
+}
+
+/* Body color and Font selection */
+body {
+    background-color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Font color white */
+.nav-link {
+    color: black;
+}
+
+header,
+p,
+li {
+    color: black;
+}
+
+/* making headings bold and increasng font-size */
+header {
+    font-weight: bold;
+    font-size: 1.3rem;
+    text-decoration: underline;
+}
+
+/* creatig space between list elements */
+li {
+    margin: 10px 0px;
+    /* top-bottom left-right */
+}
+
+/* styling main */
+section {
+    margin: 30px auto;
+    border-bottom: 1px solid rgb(204, 204, 204);
+}
+
+/* styling code tags */
+code {
+    display: block;
+    overflow-x: auto;
+    background-color: rgb(233, 233, 233);
+    margin-left: 40px;
+    border-radius: 20px;
+    font-size: 1rem;
+    width: 500px;
+    height: auto;
+}
+
+/* --------------------------------------------------------------- */
+
+/* naviagtion bar [For Desktop]*/
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 350px;
+    height: 100%;
+    background-color: #f9f9f9;
+    border-right: 1px solid #ccc;
+    overflow-y: auto;
+    align-items: center;
+    padding: 10px 0;
+
+    /* imp */
+    display: flex;
+    flex-direction: column;
+}
+
+#navbar header {
+    margin: 20px 0;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+#navbar img {
+    width: 60%;
+    height: auto;
+    max-width: 100px;
+    margin: 10px auto;
+}
+
+#navbar a {
+    margin: 5px 10px;
+    width: 90%;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 10px 20px;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+}
+
+#navbar a:hover {
+    background-color: #ccc;
+}
+
+/* Main Content Styles */
+#main-doc {
+    margin-left: 350px;
+    /* Adjusted to account for navbar width */
+    border-left: 1px solid rgb(204, 204, 204);
+    padding-left: 30px;
+    max-width: 100%;
+    background-color: #f9f9f9;
+    overflow-x: hidden;
+}
+
+
+/* for mobile */
+@media only screen and (max-width: 950px) {
+    #navbar {
+        position: static;
+        /* canbe removed but helps nav move with scrawl */
+        text-align: center;
+        width: 100%;
+
+        padding: 20px 0;
+        /* Add some padding to make it look better */
+        height: auto;
+        font-size: 1.5rem;
+        margin: 0;
+        /* Remove unnecessary margin */
+    }
+
+    #navbar a {
+        display: block;
+        text-decoration: none;
+        width: 90%;
+        /* Adjust width to ensure margins */
+        max-width: 600px;
+        margin: 10px auto;
+        /* Centers the links horizontally */
+        padding: 10px 0;
+        font-size: 1.5rem;
+        text-align: center;
+        /* Center text inside the links */
+        box-sizing: border-box;
+        /* Ensures padding is included in the width */
+    }
+
+    #main-doc {
+        margin-left: 5px;
+        margin-right: 5px;
+        /* Centers the content */
+        font-size: 1.5rem;
+        border: none;
+        padding: 20px;
+        /* Optional padding for better spacing */
+    }
+
+    /* making headings bold and increasng font-size */
+    header {
+        font-weight: bold;
+        font-size: 1.5rem;
+        text-decoration: underline;
+    }
+
+    code {
+        font-size: 1.5rem;
+        margin-left: 0;
+        padding-right: 10px;
+    }
+
+}
