@@ -1,1 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://api.assistivecards.com/cards/fruits/mango@2x.png">
+    <title>Raj Mangoes</title>
+    <link rel="stylesheet" href="Product_page.css">
+
+</head>
+
+<body>
+
+    <script>
+        function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+
+        function showSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+    </script>
+    <header id="header">
+        <nav id="nav-bar">
+            <ul class="horizontal-bar">
+                <li><a class="nav-link" href="#home"><img class="logo" id="header-img" src="https://api.assistivecards.com/cards/fruits/mango@2x.png"
+                            alt="mango"></a></li>
+                <li class="hideonmobile"><a class="nav-link" href="#features">Features</a></li>
+                <li class="hideonmobile"><a class="nav-link" href="#orchard">Orchard</a></li>
+                <li class="hideonmobile"><a class="nav-link" href="#variety">Variety</a></li>
+                <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                            height="26px" viewBox="0 -960 960 960" width="26px" fill="#008000">
+                            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                        </svg></a></li>
+            </ul>
+    
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px"
+                            viewBox="0 -960 960 960" width="26px" fill="#008000">
+                            <path
+                                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                        </svg></a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#orchard">Orchard</a></li>
+                <li><a href="#variety">Variety</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+
+    <div class="cover-img">
+        <div class="cover-text">Delicious Mangoes From Rajshahi</div>
+
+        <section id="section-1">
+            <a id="scroll-btn" href="#section-2"></a>
+        </section>
+    </div>
+
+    <div id="section-2" class="separator">Features</div>
+
+    <main>
+
+        <div id="features">
+            <div class="features-flexbox">
+                <div class="logo-text">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="60px" width="60px"
+                        fill="#FFA500"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path
+                            d="M159.3 5.4c7.8-7.3 19.9-7.2 27.7 .1c27.6 25.9 53.5 53.8 77.7 84c11-14.4 23.5-30.1 37-42.9c7.9-7.4 20.1-7.4 28 .1c34.6 33 63.9 76.6 84.5 118c20.3 40.8 33.8 82.5 33.8 111.9C448 404.2 348.2 512 224 512C98.4 512 0 404.1 0 276.5c0-38.4 17.8-85.3 45.4-131.7C73.3 97.7 112.7 48.6 159.3 5.4zM225.7 416c25.3 0 47.7-7 68.8-21c42.1-29.4 53.4-88.2 28.1-134.4c-4.5-9-16-9.6-22.5-2l-25.2 29.3c-6.6 7.6-18.5 7.4-24.7-.5c-16.5-21-46-58.5-62.8-79.8c-6.3-8-18.3-8.1-24.7-.1c-33.8 42.5-50.8 69.3-50.8 99.4C112 375.4 162.6 416 225.7 416z" />
+                    </svg>
+                </div>
+                <div class="text">
+                    <h2>What Makes Them Special?</h2>
+                    <p>Rajshahi mangoes are famous for their sweet, creamy taste and lovely smell. They are usually
+                        medium to large in size.</p>
+                </div>
+            </div>
+            <div class="features-flexbox">
+                <div class="logo-text">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="60px" width="60px"
+                        fill="#FFA500"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path
+                            d="M210.6 5.9L62 169.4c-3.9 4.2-6 9.8-6 15.5C56 197.7 66.3 208 79.1 208l24.9 0L30.6 281.4c-4.2 4.2-6.6 10-6.6 16C24 309.9 34.1 320 46.6 320L80 320 5.4 409.5C1.9 413.7 0 419 0 424.5c0 13 10.5 23.5 23.5 23.5L192 448l0 32c0 17.7 14.3 32 32 32s32-14.3 32-32l0-32 168.5 0c13 0 23.5-10.5 23.5-23.5c0-5.5-1.9-10.8-5.4-15L368 320l33.4 0c12.5 0 22.6-10.1 22.6-22.6c0-6-2.4-11.8-6.6-16L344 208l24.9 0c12.7 0 23.1-10.3 23.1-23.1c0-5.7-2.1-11.3-6-15.5L237.4 5.9C234 2.1 229.1 0 224 0s-10 2.1-13.4 5.9z" />
+                    </svg>
+                </div>
+                <div class="text">
+                    <h2>Where Do They Come From?</h2>
+                    <p>Most Rajshahi mangoes come from Rajshahi district. Chapai Nawabganj is also a big place for
+                        growing mangoes.</p>
+                </div>
+            </div>
+            <div class="features-flexbox">
+                <div class="logo-text">
+                    <!--width="560" height="315" -->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="60px" width="60px"
+                        fill="#FFA500"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path
+                            d="M160 112c0-35.3 28.7-64 64-64s64 28.7 64 64l0 48-128 0 0-48zm-48 48l-64 0c-26.5 0-48 21.5-48 48L0 416c0 53 43 96 96 96l256 0c53 0 96-43 96-96l0-208c0-26.5-21.5-48-48-48l-64 0 0-48C336 50.1 285.9 0 224 0S112 50.1 112 112l0 48zm24 48a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm152 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z" />
+                    </svg>
+                </div>
+                <div class="text">
+                    <h2>Different Types of Rajshahi Mangoes</h2>
+                    <p>There are many kinds of Rajshahi mangoes, including Himsagar, Langra, Amrapali, Fazli, Gopalbhog,
+                        and Bari 4. Each one has its own special flavor.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="separator">Orchard</div>
+
+        <div id="orchard" class="orchard-video">
+            <div class="vid-container"><iframe id="video" src="https://www.youtube.com/embed/HUOqJ_nJyU8?si=JSDvaGqCErlKehim"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+
+            <div class="vid-description">A walk around the mango garden.</div>
+        </div>
+
+        <div class="separator">Variety</div>
+
+        <div id="variety">
+            <div class="mango-variety">
+                <div class="mangoes-price">
+                    <div class="mango-name">Himsagar</div>
+                    <img src="data:image/webp;base64,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"
+                        alt="">
+                    <div class="mango-price">TK 300/Kg</div>
+                    <button class="btn">Select</button>
+                </div>
+                <div class="mangoes-price">
+                    <div class="mango-name">Lengra</div>
+                    <img src="https://marketbangla-static.s3-ap-southeast-1.amazonaws.com/products/vibSRee2cVnJzVtLMXAHyb.jpg"
+                        alt="lengra">
+                    <div class="mango-price">TK 300/Kg</div>
+                    <button class="btn">Select</button>
+                </div>
+            </div>
+            <div class="submit-email">
+                    <h2>Subscribe for offers</h2>
+                    <form id="form" action="https://www.freecodecamp.com/email-submit">
+                      <input name="email" id="email" type="email" placeholder="Enter your email address" required="">
+                      <input id="submit" type="submit" value="Get Started" class="btn">
+                    </form>
+            </div>
+        </div>
+
+        <footer class="separator">Developed by Arshad</footer>
+
+    </main>
+
+
+</body>
+
+</html>
