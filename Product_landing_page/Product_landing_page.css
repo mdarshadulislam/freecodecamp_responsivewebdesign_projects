@@ -1,1 +1,377 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    /* removes li styles eg. dot, square */
+    box-sizing: border-box;
+}
 
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+    /* min-height: 100vh;
+    background-image: url(https://images.unsplash.com/photo-1622955658214-d05c1c6fcf84?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; */
+}
+
+/* -navigation---------------------------------------------------- */
+nav {
+    background: greenyellow;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0, 1);
+    position: fixed;
+    /* Fixed position */
+    top: 0;
+    /* Stay on top */
+    width: 100%;
+    /* Full width */
+    z-index: 1000;
+    /* Ensure it stays above other content */
+}
+
+nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    /* x-main-axis */
+    align-items: center;
+    /* y-cross-axis */
+}
+
+nav ul li {
+    height: 70px;
+}
+
+nav a {
+    display: flex;
+    align-items: center;
+    /* y-cross-axis */
+    height: 100%;
+    padding: 20px 20px;
+    text-decoration: none;
+    color: green;
+    border-radius: 15px;
+    font-weight: bolder;
+}
+
+.logo {
+    max-width: 60px;
+    height: auto;
+    margin: 5px 20px;
+}
+
+nav li:first-child {
+    margin-right: auto;
+    /* logo to left */
+}
+
+.sidebar li:first-child {
+    margin-right: 0;
+    /* x-logo centered on sidebar */
+}
+
+a:hover {
+    background-color: rgb(255, 234, 0);
+    transition: .1s;
+}
+
+/* ---sidebar--------------------------------------------------- */
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    /*     width: ; imp */
+    z-index: 999;
+    background-color: rgba(172, 255, 47, 0.79);
+    backdrop-filter: blur(10px);
+
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    font-size: larger;
+}
+
+.menu-button {
+    display: none;
+}
+
+/* ---------------------------------------------------------- */
+/* Container holding the cover-image and the text */
+.cover-img {
+    position: relative;
+    min-height: 100vh;
+    background-image: url(https://images.unsplash.com/photo-1622955658214-d05c1c6fcf84?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+div.cover-text {
+    position: absolute;
+    text-align: center;
+    font-size: 2.5em;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bolder;
+}
+
+/* ---scroll down button--------------------------------------------- */
+
+section {
+    height: 110vh;
+    position: relative;
+}
+
+a#scroll-btn {
+    position: absolute;
+    height: 5em;
+    width: 2em;
+    border: 0.2em solid #ffffff;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 6.25em;
+    border-radius: 3em;
+}
+
+a#scroll-btn:before {
+    position: absolute;
+    content: "";
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: ;
+    height: 1.2em;
+    width: 1.2em;
+    background-color: #ffffff;
+    border-radius: 50%;
+    animation: move-down 2s infinite;
+}
+
+@keyframes move-down {
+    10% {
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: translateY(5.3em);
+        opacity: 0;
+    }
+}
+
+a#scroll-btn:after {
+    position: absolute;
+    width: 5em;
+    display: block;
+    width: 12em;
+    text-align: center;
+    left: -4.2em;
+    bottom: -2.5em;
+    font-size: 1.6em;
+    color: #ffffff;
+    letter-spacing: 3px;
+    font-weight: 600;
+}
+
+/* ---webpage contents--------------------------------------------- */
+.features-flexbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 30px 0;
+}
+
+.text {
+    width: 40%;
+    margin-right: 20%;
+}
+
+.logo-text {
+    margin-left: 20%;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+.separator {
+    width: 100%;
+    height: 70px;
+    background-color: #e8e8e8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+/* ---youtube video--------------------------------------------- */
+
+.orchard-video {
+    margin: 30px 250px;
+}
+
+.vid-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* 16:9 aspect ratio */
+}
+
+.vid-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.vid-description {
+    margin: 20px auto;
+    font-size: 1rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ---mango variety--------------------------------------------- */
+
+.mango-variety {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.mangoes-price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    width: calc(100% / 4);
+    margin: 10px;
+    border: 1px solid #000;
+    border-radius: 3px;
+}
+
+.mangoes-price img {
+    max-width: 200px;
+    height: auto;
+    border: 1px solid #e8e8e8;
+}
+
+.mango-name,
+.mango-price {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 10px auto;
+}
+
+.btn {
+    margin: 15px 0;
+    background-color: greenyellow;
+    font-weight: bold;
+    padding: 0 20px;
+    height: 40px;
+    font-size: 1em;
+    border-radius: 2px;
+
+}
+
+/* ---submit email--------------------------------------------- */
+
+#form {
+    width: 60%;
+}
+
+.submit-email {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 200px;
+    margin-top: 50px;
+}
+
+#email {
+    width: 200px;
+    height: 40px;
+    border: 1px solid black;
+}
+
+/* ---for tablets--------------------------------------------- */
+@media (max-width: 800px) {
+    .hideonmobile {
+        display: none;
+    }
+
+    .menu-button {
+        display: block;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        cursor: pointer;
+    }
+
+    .features-flexbox {
+        flex-direction: column;
+    }
+
+    .logo-text {
+        margin: auto;
+    }
+
+    .text {
+        width: 60%;
+        margin: auto;
+        text-align: center;
+    }
+
+    h2 {
+        margin: 20px auto;
+    }
+
+    p {
+        margin: auto;
+        text-align: justify;
+    }
+
+    .orchard-video {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .orchard-video {
+        margin: 30px 10px;
+    }
+
+    .mango-variety {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mangoes-price {
+        width: 300px;
+    }
+
+}
